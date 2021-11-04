@@ -1,0 +1,411 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: white;
+  font-family: "Lato", sans-serif;
+  color: #333;
+}
+input,
+textarea,
+button {
+  font-family: "Lato", sans-serif;
+}
+
+img {
+  width: 200px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-weight: 300;
+}
+
+h2 {
+  margin: 2rem 0;
+}
+
+p {
+  margin: 1rem 0;
+  line-height: 1.5;
+}
+a {
+  text-decoration: none;
+  color: coral;
+}
+
+i {
+  font-size: 3rem;
+}
+
+.bg {
+  background-color: #fff;
+}
+/**************** Header area ****************/
+
+header {
+  background: url("Tapio2021a.jpg") no-repeat fixed
+    center center/cover;
+}
+
+.main_nav {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+header .container {
+  position: relative;
+  padding: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav ul {
+  list-style-type: none;
+}
+
+header nav ul li {
+  display: inline-block;
+  padding: 0 1rem;
+}
+
+header nav ul li a,
+.logo a {
+  text-decoration: none;
+  display: block;
+  color: #333;
+  padding: 0 1rem;
+}
+
+.logo a {
+  font-size: 2rem;
+}
+
+/**************** Hero-Banner area ****************/
+
+#hero-banner {
+  height: 95vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#hero-banner h2 {
+  font-size: 5rem;
+  color: #333;
+  text-align: center;
+}
+/**************** Main area ****************/
+
+#galleria,
+#projects,
+#about,
+#skills {
+  padding: 3rem;
+  min-height: 500px;
+}
+
+#projects .projects_boxes {
+  display: flex;
+  justify-content: space-between;
+}
+
+#projects .box {
+  background-color: white;
+  width: 32%;
+  padding: 1rem;
+  border-radius: 2px;
+  border: Gainsboro 1px solid;
+}
+
+#projects .box h3 {
+  margin-bottom: 1rem;
+}
+#projects .box img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+#about {
+  background: OldLace;
+}
+
+#about img {
+  float: right;
+  margin-left: 2rem;
+}
+
+#skills .skills_group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.skill:nth-child(odd) {
+  background-color: rgb(228, 228, 228);
+}
+
+.skill {
+  background-color: rgb(247, 247, 247);
+  padding: 2rem;
+  border: 1px solid rgb(222, 222, 222);
+}
+
+progress[value] {
+  height: 1.5rem;
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+}
+
+progress[value]::-webkit-progress-bar {
+  background-color: #eee;
+  border-radius: 2px;
+}
+
+progress[value]::-webkit-progress-value {
+  background: rgb(80, 170, 255);
+  border-radius: 2px;
+  background-size: 35px 20px, 100% 100%, 100% 100%;
+}
+
+.material-icons.md-48 {
+  font-size: 58px;
+  color: var(--primary-color);
+}
+
+/**************** Galleria ****************/
+
+#gallery {
+  margin-top: 3rem;
+}
+.gallery-group {
+  display: grid;
+  grid-template-areas:
+    "a a b b c c"
+    "a a d d c c"
+    "e h h h c c"
+    "f h h h i i"
+    "g h h h i i";
+  grid-gap: 0.5rem;
+  grid-template-columns: repeat(6, 1fr);
+  position: relative;
+}
+.grid-div {
+  box-shadow: inset 50px 50px 50px #333;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.grid-item {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 1s;
+}
+
+.grid-item:hover {
+  transform: scale(1.05);
+}
+
+.grid-item-1 {
+  grid-area: a;
+}
+.grid-item-2 {
+  grid-area: b;
+}
+.grid-item-3 {
+  grid-area: c;
+}
+.grid-item-4 {
+  grid-area: d;
+}
+.grid-item-5 {
+  grid-area: e;
+}
+.grid-item-6 {
+  grid-area: f;
+}
+.grid-item-7 {
+  grid-area: g;
+}
+.grid-item-8 {
+  grid-area: h;
+}
+.grid-item-9 {
+  grid-area: i;
+}
+
+
+/**************** Footer area ****************/
+
+footer {
+  background-color: #333;
+  text-align: center;
+  color: white;
+  padding: 0.5rem;
+}
+footer .copyright {
+  margin-top: 2rem;
+  font-size: 0.8rem;
+}
+
+/**************** Form ****************/
+
+footer form {
+  margin: 0 auto;
+  width: 60%;
+  text-align: center;
+}
+
+footer form .form-group {
+  margin: 2rem 0;
+  display: flex;
+}
+
+footer form label {
+  width: 200px;
+  display: inline-block;
+  text-align: left;
+}
+
+footer form .form-group input,
+footer form .form-group textarea {
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border: none;
+  width: 60%;
+  font-size: 1rem;
+}
+
+footer form .form-group textarea {
+  min-height: 100px;
+}
+
+footer button {
+  background-color: rgb(80, 170, 255);
+  text-transform: uppercase;
+  border-radius: 5px;
+  border: none;
+  padding: 1rem 2rem;
+  color: #fff;
+  font-size: inherit;
+}
+
+/**************** Tablet support ****************/
+
+@media (max-width: 899px) {
+  header nav ul {
+    text-align: right;
+  }
+  #skills .skills_group {
+    margin-top: 2rem;
+  }
+
+  .skill {
+    padding: 1rem;
+    margin: 1rem;
+  }
+  footer form {
+    width: 80%;
+    text-align: center;
+  }
+  footer form .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  footer form .form-group input,
+  footer form .form-group textarea {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+
+/**************** Mobile support ****************/
+@media (max-width: 576px) {
+  header .container {
+    display: block;
+    text-align: center;
+    padding: 1rem;
+  }
+  #hero-banner h2 {
+    font-size: 1.5rem;
+    top: 30vh;
+    position: relative;
+  }
+  header nav ul {
+    margin-top: 0.5rem;
+    text-align: center;
+  }
+  header nav ul li {
+    padding: 1rem 3rem;
+  }
+
+  #hero-banner {
+    height: 100vh;
+  }
+
+  #hero-banner h2 {
+    font-size: 1.5rem;
+  }
+  #projects,
+  #about,
+  #skills,
+  #gallery {
+    padding: 1rem;
+  }
+
+  #gallery {
+    margin-top: 65vh;
+    min-height: 0;
+  }
+  #projects .projects_boxes {
+    display: block;
+  }
+  #projects .box {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  #about img {
+    width: 100%;
+    float: none;
+    margin: 0;
+  }
+  footer form .form-group {
+    display: block;
+  }
+
+  #backToTop {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    padding: 0.5rem;
+  }
+}
+
