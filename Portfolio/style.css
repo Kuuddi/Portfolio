@@ -93,7 +93,7 @@ header nav ul li a,
 .logo a {
   text-decoration: none;
   display: block;
-  color: #333;
+  color: rgb(0, 0, 0);
   padding: 0 1rem;
 }
 
@@ -112,7 +112,7 @@ header nav ul li a,
 
 #hero-banner h2 {
   font-size: 5rem;
-  color: #333;
+  color: rgb(3, 3, 3);
   text-align: center;
 }
 /**************** Main area ****************/
