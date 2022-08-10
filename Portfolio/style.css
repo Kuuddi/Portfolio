@@ -55,7 +55,7 @@ i {
 /**************** Header area ****************/
 
 header {
-  background: url("/Portfolio/Images/gradient1.jpg") no-repeat fixed center
+  background: url("/Portfolio/Images/gradient3.jpg") no-repeat fixed center
     center/cover;
 }
 
@@ -151,7 +151,7 @@ header nav ul li a,
 }
 
 #about {
-  background: rgb(80, 170, 255);
+  background: rgba(211, 60, 193, 0.677);
   font-weight: 1000;
 }
 
